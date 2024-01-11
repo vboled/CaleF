@@ -1,17 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
 import { AppRegistry, StyleSheet, Text, View } from 'react-native';
-import Calendar from './src/components/Calendar';
+import CalendarPage from './src/pages/CalendarPage';
+import BottomButtons from './src/components/BottomButtons';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <Calendar/>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <CalendarPage/>
       <StatusBar style="auto" />
+      <BottomButtons/>
     </View>
   );
 }
+
+AppRegistry.registerComponent('frontendcale', () => App);
+
 
 const styles = StyleSheet.create({
   container: {
