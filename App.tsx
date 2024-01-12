@@ -5,8 +5,10 @@ import DayButton from './src/components/DayButton';
 export default function App() {
   return (
     <PaperProvider>
-      <DayButton/>
-      <Text>121</Text>
+      <View style={styles.container}>
+        <DayButton/>
+        <Text>121</Text>
+      </View>
     </PaperProvider>
   );
 }
