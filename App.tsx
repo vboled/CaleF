@@ -1,19 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
 import { AppRegistry, StyleSheet, Text, View } from 'react-native';
-import CalendarPage from './src/pages/CalendarPage';
-import BottomButtons from './src/components/BottomButtons';
+import { PaperProvider } from 'react-native-paper';
+import DayButton from './src/components/DayButton';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <CalendarPage/>
-      <StatusBar style="auto" />
-      <BottomButtons/>
-    </View>
+    <PaperProvider>
+      <DayButton/>
+      <Text>121</Text>
+    </PaperProvider>
   );
 }
 
-AppRegistry.registerComponent('frontendcale', () => App);
+AppRegistry.registerComponent('FrontendCale', () => App);
 
 
 const styles = StyleSheet.create({
